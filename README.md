@@ -23,7 +23,8 @@ The PeerMate Progress Tracker is a web application built using React for the fro
 ## Contributors
 - [Sajit Magesh](https://github.com/maverickOG)
 
-### [Deployed Link](https://fswd-learning.vercel.app/)
+## Deployed Link
+- [Front-end](https://fswd-learning.vercel.app/)
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
