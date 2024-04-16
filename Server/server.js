@@ -16,9 +16,7 @@ mongoose.connect(mongodburi);
 
 app.get("/mongoDbConnection", (req, res) => {
   if (mongoose.connection.readyState == 1) {
-    const message = "📦 MongoDB is connected";
-    res.status(200).json(message);
-    console.log(message);
+    res.status(200).json("📦 MongoDB is connected");
   } else {
     res.status(400).json("❌ Error connecting to MongoDB");
   }
