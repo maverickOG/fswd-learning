@@ -6,11 +6,11 @@ The PeerMate Progress Tracker is a web application built using React for the fro
 ## Usage
 1. **Clone the Repository:**  
    ```bash
-   git clone https://github.com/yourusername/peer-mate-tracker.git
+   git clone https://github.com/maverickOG/fswd-learning.git
    ```
 2. **Install Dependencies:**  
    ```bash
-   cd peer-mate-tracker
+   cd fswd-learning
    npm install
    ```
 3. **Start the Frontend Server:**  
