@@ -13,6 +13,8 @@ const mongodburi = process.env.MONGO_URI;
 app.use(bodyParser.json());
 
 mongoose.connect(mongodburi);
+.then(() => {console.log("Database Connected")})
+.catch((err) => {console.log(err)})
 
 app.get("/mongoDbConnection", (req, res) => {
   if (mongoose.connection.readyState == 1) {
@@ -23,7 +25,7 @@ app.get("/mongoDbConnection", (req, res) => {
 });
 
 // Mount the routes from routes.js
-app.use("/", routes);
+app.use("/api", routes);
 
 if (require.main === module) {
   app.listen(port, () => {
