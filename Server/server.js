@@ -12,9 +12,14 @@ const mongodburi = process.env.MONGO_URI;
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
 
-mongoose.connect(mongodburi);
-.then(() => {console.log("Database Connected")})
-.catch((err) => {console.log(err)})
+mongoose
+  .connect(mongodburi)
+  .then(() => {
+    console.log("Database Connected");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 app.get("/mongoDbConnection", (req, res) => {
   if (mongoose.connection.readyState == 1) {
